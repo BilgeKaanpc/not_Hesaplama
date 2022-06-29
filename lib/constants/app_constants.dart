@@ -6,4 +6,5 @@ class Sabitler{
   static final TextStyle baslikStyle = GoogleFonts.quicksand(
     fontSize: 24,fontWeight: FontWeight.w900, color: anaRenk
   );
+  static BorderRadius borderRadius = BorderRadius.circular(24);
 }

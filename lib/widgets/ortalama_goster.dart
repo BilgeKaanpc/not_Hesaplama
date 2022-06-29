@@ -16,7 +16,7 @@ class OrtalamaGoster extends StatelessWidget {
           dersSayisi > 0 ? '$dersSayisi Ders Girildi' : 'Ders Seciniz',style: Sabitler.dersSayisiStyle,
         ),
         Text(ortalama >=0 ? '${ortalama.toStringAsFixed(2)}' : '0.0',style: Sabitler.ortalamaStyle,),
-        Text("ders",style: Sabitler.dersSayisiStyle),
+        Text("Ortalama",style: Sabitler.dersSayisiStyle),
       ],
     );
   }

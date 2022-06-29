@@ -1,6 +1,25 @@
 import 'package:flutter/material.dart';
 
+import '../model/model/ders.dart';
+
 class DataHelper {
+
+  static List<Ders> tumEklenenDersler = [];
+
+  static dersEkle(Ders ders){
+    tumEklenenDersler.add(ders);
+  }
+
+  static double ortalamaHesapla(){
+    double toplamNot = 0;
+    double toplamKredi = 0;
+    tumEklenenDersler.forEach((element) {
+      toplamNot = toplamNot + (element.krediDegeri * element.harfDegeri);
+      toplamKredi += element.krediDegeri;
+    });
+    return toplamNot / toplamKredi;
+  }
+
   static List<String> _tumDersler() {
     return ['AA', 'BA', 'BB', 'CB', 'CC', 'DC', 'DD', 'FD', 'FF'];
   }

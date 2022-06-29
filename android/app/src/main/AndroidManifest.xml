@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.not_hesaplama">
    <application
-        android:label="not_hesaplama"
+        android:label="Not Hesaplama"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

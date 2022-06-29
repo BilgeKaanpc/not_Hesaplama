@@ -178,7 +178,7 @@ class _OrtalamaHesaplaPageState extends State<OrtalamaHesaplaPage> {
 
   _dersEkleveHEsapla() {
     if(formKey.currentState!.validate()){
-      
+
       formKey.currentState!.save();
       var eklenecekDers = Ders(girilenDers,secilen,secilenKredi);
       DataHelper.dersEkle(eklenecekDers);
